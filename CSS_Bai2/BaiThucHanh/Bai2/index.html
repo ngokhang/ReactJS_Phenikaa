@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        li,
+        a {
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        a {
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #1abc9b;
+        }
+
+        .header>div {
+            padding: 50px;
+        }
+
+        .header>div>* {
+            color: white;
+            font-weight: bold;
+        }
+
+        .header .link-list {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+
+        }
+
+        .link-list .sub-list {
+            display: flex;
+            gap: 10px;
+            padding-left: 20px;
+        }
+
+        .link-left {
+            padding-right: 20px;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .left {
+            background-color: #f1f1f1;
+            padding: 10px;
+            flex-basis: 30%;
+        }
+
+        .about-me {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image {
+            background-color: #aaaaaa;
+            height: 150px;
+            padding: 10px 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+
+        .right {
+            flex-basis: 70%;
+            padding: 10px;
+        }
+
+        .more-text {
+            margin-top: 20px;
+        }
+
+        .more-text ul {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #f1f1f1;
+            gap: 20px;
+        }
+
+        .more-text ul>li {
+            background-color: #aaaaaa;
+            padding: 10px 5px;
+        }
+
+        .title-heading p,
+        span {
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 10px;
+            text-align: center;
+            padding: 20px;
+            background-color: #dddddd;
+        }
+
+        .footer span {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <div>
+                <h1>My Website</h1>
+                <p>A website created by me</p>
+            </div>
+            <ul class="link-list">
+                <li>
+                    <ul class="sub-list">
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </li>
+                <li class="link-left">
+                    <a href="#">Link</a>
+                </li>
+            </ul>
+        </header>
+
+        <section>
+            <div class="left">
+                <div class="about-me">
+                    <div class="title">
+                        <h3>About me</h3>
+                        <p>Photo of me:</p>
+                    </div>
+                    <div class="image">
+                        <span>Image</span>
+                    </div>
+                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+                </div>
+                <div class="more-text">
+                    <h3>More text</h3>
+                    <p>Lorem ipsum dolor sit ame.</p>
+                    <ul>
+                        <li><span>Image</span></li>
+                        <li><span>Image</span></li>
+                        <li><span>Image</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="title-heading">
+                    <div class="title">
+                        <h3>Title Heading</h3>
+                        <span>Title description, Dec 7, 2017</span>
+                    </div>
+                    <div class="image">
+                        <span>Image</span>
+                    </div>
+                    <p>Some text...</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                        eiusmode tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco.</p>
+                </div>
+                <div class="title-heading">
+                    <h3>Title Heading</h3>
+                    <span>Title description, Dec 7, 2017</span>
+                    <div class="image">
+                        <span>Image</span>
+                    </div>
+                    <p>Some text...</p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do
+                        eiusmode tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <span>Footer</span>
+        </footer>
+    </div>
+</body>
+
+</html>
