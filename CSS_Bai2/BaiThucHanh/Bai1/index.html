@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .header-link {
+            padding: 10px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            width: 200px;
+            padding: 200px 0px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .right {
+            width: 200px;
+            padding: 200px 0px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .content {
+            text-align: center;
+            width: 100%;
+            background-color: #f5f5f5;
+            padding: 200px 0px;
+        }
+
+        .footer {
+            margin-top: 10px;
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <span class="text">head</span>
+        </header>
+        <ul class="header-link"><span class="text">head-link</span></ul>
+        <section class="container">
+            <aside class="left">
+                <span class="text">left</span>
+            </aside>
+            <div class="content"><span class="text">content</span></div>
+            <aside class="right">
+                <span class="text">right</span>
+            </aside>
+        </section>
+        <footer class="footer">
+            <span class="text">footer</span>
+        </footer>
+    </div>
+</body>
+
+</html>
