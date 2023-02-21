@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        img {
+            width: 100%;
+
+        }
+
+        .header {
+            width: 100%;
+            background-color: #f5f5f5;
+            padding: 10px 5px;
+        }
+
+        .header>a {
+            display: inline-block;
+            color: black;
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 54px;
+            padding-left: 10px;
+        }
+
+        .nav-link {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #f5f5f5;
+            margin: 10px 0px;
+        }
+
+        .nav-link>li>a {
+            color: black;
+            font-size: 20px;
+            line-height: 43px;
+            border-right: 1px solid black;
+            padding-right: 30px;
+        }
+
+        .nav-link>li:last-child>a {
+            border-right: none;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .content .list-film {
+            max-width: 40%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+
+        }
+
+        .content .list-film>li {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0;
+            padding: 5px 15px;
+        }
+
+        .content .film-title {
+            color: black;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 1.25;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .content .channel {
+            color: #86878b;
+        }
+
+        .view {
+            width: 60%;
+            height: 500px;
+            background-color: black;
+        }
+
+        .information {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .information .title {
+            padding-top: 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .information .title span {
+            color: #86878b;
+        }
+
+        .information .description {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 5px;
+        }
+
+        .information .description p {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header">
+            <a href="#">Phim hoat hinh</a>
+        </header>
+        <ul class="nav-link">
+            <li>
+                <a href="#">Phim hoạt hình</a>
+            </li>
+            <li>
+                <a href="#">Phim hoạt hình yêu thích</a>
+            </li>
+            <li>
+                <a href="#">Nhân vật hoạt hình</a>
+            </li>
+            <li>
+                <a href="#">Góp ý</a>
+            </li>
+        </ul>
+        <div class="content">
+            <ul class="list-film">
+                <li>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDQ2OGJjNGMtYjk3ZS00YmMyLWI5MjQtZjg4NjlhNmVkYWMzXkEyXkFqcGdeQXVyNjIzMjgxMDY@._V1_.jpg"
+                            alt="">
+                    </div>
+                    <a href="#" class="film-title">Welcome đến với khách sạn Nobi <span>- 5,147,528 lượt xem</span></a>
+                    <a href="#" class="channel">Channel Fun</a>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDQ2OGJjNGMtYjk3ZS00YmMyLWI5MjQtZjg4NjlhNmVkYWMzXkEyXkFqcGdeQXVyNjIzMjgxMDY@._V1_.jpg"
+                            alt="">
+                    </div>
+                    <a href="#" class="film-title">Welcome đến với khách sạn Nobi <span>- 5,147,528 lượt
+                            xem</span></a>
+                    <a href="#" class="channel">Channel Fun</a>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDQ2OGJjNGMtYjk3ZS00YmMyLWI5MjQtZjg4NjlhNmVkYWMzXkEyXkFqcGdeQXVyNjIzMjgxMDY@._V1_.jpg"
+                            alt="">
+                    </div>
+                    <a href="#" class="film-title">Welcome đến với khách sạn Nobi <span>- 5,147,528 lượt xem</span></a>
+                    <a href="#" class="channel">Channel Fun</a>
+                </li>
+                <li>
+                    <div class="image">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDQ2OGJjNGMtYjk3ZS00YmMyLWI5MjQtZjg4NjlhNmVkYWMzXkEyXkFqcGdeQXVyNjIzMjgxMDY@._V1_.jpg"
+                            alt="">
+                    </div>
+                    <a href="#" class="film-title">Welcome đến với khách sạn Nobi <span>- 5,147,528 lượt xem</span></a>
+                    <a href="#" class="channel">Channel Fun</a>
+                </li>
+            </ul>
+            <div class="new-chapter">
+                <div class="view"></div>
+                <div class="information">
+                    <p class="title">Tớ là Mari - <span>5,147,528 lượt xem</span></p>
+                    <p>Tác giả</p>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aperiam consequatur ipsam
+                            fuga
+                            ipsum expedita, molestias earum esse doloremque. Quisquam illum repudiandae molestiae fugit
+                            earum corrupti quae vero ea nobis.\</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aperiam consequatur ipsam
+                            fuga
+                            ipsum expedita, molestias earum esse doloremque. Quisquam illum repudiandae molestiae fugit
+                            earum corrupti quae vero ea nobis.\</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aperiam consequatur ipsam
+                            fuga
+                            ipsum expedita, molestias earum esse doloremque. Quisquam illum repudiandae molestiae fugit
+                            earum corrupti quae vero ea nobis.\</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
