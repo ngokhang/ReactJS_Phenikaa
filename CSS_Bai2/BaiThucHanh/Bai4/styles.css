@@ -1,0 +1,96 @@
+:root {
+    --width-news: 600px;
+}
+
+li,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    padding: 1px;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.title {
+    margin: 20px 0px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ececec;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+    padding: 5px 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 50px;
+}
+
+.news {
+    width: var(--width-news);
+}
+
+.news .title {
+    width: 600px;
+}
+
+.news .image {
+    width: var(--width-news);
+}
+
+.news .news-info {
+    margin: 10px 0;
+}
+
+.news-description {
+    margin: 10px 0;
+}
+
+.catalog {
+    width: 200px;
+}
+
+.catalog-items {
+    padding-left: 20px;
+}
+
+.catalog-items>li {
+    margin: 5px;
+    list-style-type: disc;
+}
+
+.catalog-items>li a {
+    color: blue;
+}
