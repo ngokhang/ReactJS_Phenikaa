@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+form input {
+  padding: 5px 5px;
+  outline: none;
+}
+
+form button {
+  padding: 5px;
+}
+
+ul {
+  padding: 5px;
+}
+
+ul li {
+  margin: 10px 0px;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+
+.mask form {
+  position: relative;
+  width: 500px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.close-icon {
+  display: inline-block;
+  position: absolute;
+  right: 0.25rem;
+  top: 0.25rem;
+  cursor: pointer;
+}

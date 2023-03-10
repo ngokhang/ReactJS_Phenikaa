@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+    <div>
+      <h1>Todo List</h1>
+      <form action="#">
+        <input type="text" id="todoInput" placeholder="Todo...">
+        <button>Add</button>
+      </form>
+      <ul class="todoList">
+      </ul>
+    </div>
+    <div class="mask">
+      <form action="#" id="formEdit">
+        <h4>Edit todo</h4>
+        <span class="material-symbols-outlined close-icon">
+          close
+          </span>
+        <div class="form-content">
+          <label for="todoNameInput">Todo's name: </label>
+          <input type="text" name="todoNameInput" id="todoNameInput" placeholder="Anything...">
+        </div>
+        <button class="btn-edit">Edit</button>
+      </form>
+    </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
