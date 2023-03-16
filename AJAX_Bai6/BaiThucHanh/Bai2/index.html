@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="App">
+    <form action="#" method="post" name="todoForm">
+      <input type="text" placeholder="Todo..." id="inputTodo" name="inputTodo">
+      <button type="submit" class="btnAdd">Add</button>
+    </form>
+    <table class="table" border="1" style="border-collapse: collapse; margin-top: 20px;">
+      <thead>
+        <th>UserId</th>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Completed</th>
+        <th>Options</th>
+      </thead>
+      <tbody class="list-todo">
+        
+      </tbody>
+    </table>
+    
+    <div style="padding-top: 20px">
+      <button class="prevBtn">Prev</button>
+      <button class="nextBtn">Next</button>
+    </div>
+  </div>
+  <script src="index.js" async></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li:hover {
+  background: #ececec;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}

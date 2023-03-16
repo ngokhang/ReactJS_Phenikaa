@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div id="app" style="text-align: center;">
+    <table class="table">
+      <thead>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+      </thead>
+      <tbody class="list">
+      </tbody>
+    </table>
+    <div>
+      <button class="btnPrev" disabled>Prev</button>
+      <button class="nextPrev">Next</button>
+    </div>
+  </div>
+  <script>
+    let limit = 5; 
+    let page = 1;
+    let list = [];
+    const listUser = document.querySelector('.list');
+    const btnPrev = document.querySelector('.btnPrev');
+    const btnNext = document.querySelector('.nextPrev');
+
+    async function getAllUsers(limit, page) {
+      if (page <= 1) {
+        btnPrev.setAttribute('disabled', true);
+      } else if (page >= 2) {
+        btnNext.setAttribute('disabled', true);
+      }
+      list = await axios
+        .get(`https://jsonplaceholder.typicode.com/users?_limit=${limit}&_page=${page}`).then(res => res.data);
+      render();
+    }    
+    
+    function render() {
+      let newList = [...list].map(e => `<tr><td>${e.name}</td><td>${e.username}</td><td>${e.email}</td></tr>`).join('');
+      listUser.innerHTML = newList;
+    }
+
+
+    btnNext.addEventListener('click', (e) => {
+      ++page;
+        btnPrev.removeAttribute('disabled');
+        getAllUsers(limit, page);
+    });
+
+    btnPrev.addEventListener('click', (e) => {
+      --page;
+        btnNext.removeAttribute('disabled');
+        getAllUsers(limit, page);
+    });
+    
+    getAllUsers(limit, page);
+  </script>
+</body>
+</html>
