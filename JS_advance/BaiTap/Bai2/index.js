@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var ToDo_1 = require("./ToDo");
+var TodoList_1 = require("./TodoList");
+var todo_1 = new ToDo_1["default"]('Nau com', 'Nau comm', false, '3/18/2023');
+var todo_2 = new ToDo_1["default"]('Nau com', 'Nau comm', false, '3/19/2023');
+var todoList = new TodoList_1["default"]();
+todoList.addTodo(todo_1);
+todoList.addTodo(todo_2);
+console.log(todoList.getList());
